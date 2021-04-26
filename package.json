@@ -17,5 +17,10 @@
   "devDependencies": {
     "concurrently": "^5.2.0",
     "lerna": "^3.13.1"
+  },
+  "dependencies": {
+    "bootstrap": "^4.1.0",
+    "node-sass": "^4.14.1",
+    "prop-types": "^15.6.1"
   }
 }

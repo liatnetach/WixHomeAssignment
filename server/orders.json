@@ -62,7 +62,7 @@
       "name": "Fernando Diaz",
       "id": "U30-40"
     },
-    "fulfillmentStatus": "fulfilled",
+    "fulfillmentStatus": "not-fulfilled",
     "billingInfo": {
       "status": "paid"
     },
@@ -94,7 +94,7 @@
       "name": "Anna Evans",
       "id": "U41-56"
     },
-    "fulfillmentStatus": "fulfilled",
+    "fulfillmentStatus": "not-fulfilled",
     "billingInfo": {
       "status": "paid"
     },
@@ -134,7 +134,7 @@
       "name": "Joe Diaz",
       "id": "U4-40"
     },
-    "fulfillmentStatus": "not-fulfilled",
+    "fulfillmentStatus": "fulfilled",
     "billingInfo": {
       "status": "paid"
     },
@@ -198,7 +198,7 @@
       "name": "Francis Waine",
       "id": "U51-24"
     },
-    "fulfillmentStatus": "not-fulfilled",
+    "fulfillmentStatus": "fulfilled",
     "billingInfo": {
       "status": "not-paid"
     },
@@ -542,7 +542,7 @@
       "name": "Arnold Stills",
       "id": "U25-60"
     },
-    "fulfillmentStatus": "not-fulfilled",
+    "fulfillmentStatus": "fulfilled",
     "billingInfo": {
       "status": "not-paid"
     },
@@ -570,7 +570,7 @@
       "name": "Tori Diaz",
       "id": "U59-40"
     },
-    "fulfillmentStatus": "not-fulfilled",
+    "fulfillmentStatus": "fulfilled",
     "billingInfo": {
       "status": "paid"
     },
@@ -914,7 +914,7 @@
       "name": "Anna Taylor",
       "id": "U41-35"
     },
-    "fulfillmentStatus": "fulfilled",
+    "fulfillmentStatus": "not-fulfilled",
     "billingInfo": {
       "status": "paid"
     },
@@ -1002,7 +1002,7 @@
       "name": "Daniel Morrison",
       "id": "U1-10"
     },
-    "fulfillmentStatus": "not-fulfilled",
+    "fulfillmentStatus": "fulfilled",
     "billingInfo": {
       "status": "not-paid"
     },
@@ -6786,7 +6786,7 @@
       "name": "Ally Cruz",
       "id": "U28-42"
     },
-    "fulfillmentStatus": "fulfilled",
+    "fulfillmentStatus": "not-fulfilled",
     "billingInfo": {
       "status": "paid"
     },
@@ -7114,7 +7114,7 @@
       "name": "Matthew Cruz",
       "id": "U2-42"
     },
-    "fulfillmentStatus": "fulfilled",
+    "fulfillmentStatus": "not-fulfilled",
     "billingInfo": {
       "status": "paid"
     },
@@ -9034,7 +9034,7 @@
       "name": "Kurt Johnson",
       "id": "U46-43"
     },
-    "fulfillmentStatus": "fulfilled",
+    "fulfillmentStatus": "not-fulfilled",
     "billingInfo": {
       "status": "paid"
     },
@@ -16554,7 +16554,7 @@
       "name": "Lori Spears",
       "id": "U15-58"
     },
-    "fulfillmentStatus": "not-fulfilled",
+    "fulfillmentStatus": "fulfilled",
     "billingInfo": {
       "status": "not-paid"
     },
@@ -18726,7 +18726,7 @@
       "name": "Arthur Daniel",
       "id": "U32-1"
     },
-    "fulfillmentStatus": "fulfilled",
+    "fulfillmentStatus": "not-fulfilled",
     "billingInfo": {
       "status": "paid"
     },
@@ -38214,7 +38214,7 @@
       "name": "James Cruz",
       "id": "U0-42"
     },
-    "fulfillmentStatus": "fulfilled",
+    "fulfillmentStatus": "not-fulfilled",
     "billingInfo": {
       "status": "paid"
     },
@@ -40390,7 +40390,7 @@
       "name": "Francis Cruz",
       "id": "U51-42"
     },
-    "fulfillmentStatus": "fulfilled",
+    "fulfillmentStatus": "not-fulfilled",
     "billingInfo": {
       "status": "paid"
     },
@@ -40550,7 +40550,7 @@
       "name": "Anna Cruz",
       "id": "U41-42"
     },
-    "fulfillmentStatus": "fulfilled",
+    "fulfillmentStatus": "not-fulfilled",
     "billingInfo": {
       "status": "paid"
     },

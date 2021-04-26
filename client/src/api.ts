@@ -20,8 +20,17 @@ export type Order = {
 	customer: Customer;
 	itemQuantity: number;
 	price: Price;
+	items: ItemsInOrder[];
 }
-
+export type ItemsInOrder = {
+	id: string;
+	quantity: number;
+}
+export type OrderAndPages = {
+	orders: Order[];
+	pageNeeded: number;
+	notFulfillmentcounter: number;
+}
 export type Item = {
 	id: string;
 	name: string;
@@ -30,18 +39,36 @@ export type Item = {
 }
 
 export type ApiClient = {
-	getOrders: () => Promise<Order[]>;
+	getFilteredOrders: (value: string, page: number, fulStatus: string, payStatus: string, sortKey: number) => Promise<OrderAndPages>;
 	getItem: (itemId: string) => Promise<Item>;
+	setFulfillmentStatus: (orderId: number, fulfillmentStatus: string) => Promise<number>;
 }
 
 export const createApiClient = (): ApiClient => {
 	return {
-		getOrders: () => {
-			return axios.get(`http://localhost:3232/api/orders`).then((res) => res.data);
+		getFilteredOrders: (value: string, page: number = 1, fulStatus: string = "All", payStatus: string = "All", sortKey: number = 0) => {
+			if (value === '') value = 'emptyString-1';
+			console.log("in api: ", value, page, fulStatus, payStatus);
+			return axios.get(`http://localhost:3232/api/orders/filter/${value}/${page}/${fulStatus}/${payStatus}/${sortKey}`).then((res) => res.data).catch((error) => {
+				if (error.response) {
+					console.log("Error in getFilteredOrders: ",error.response.data); // => the response payload 
+				};
+			});
 		},
 		getItem: (itemId: string) => {
-			return axios.get(`http://localhost:3232/api/items/${itemId}`).then((res) => res.data);
-		}
+			return axios.get(`http://localhost:3232/api/items/${itemId}`).then((res) => res.data).catch((error) => {
+				if (error.response) {
+					console.log("Error in getItem: ",error.response.data); // => the response payload 
+				};
+			});
+		},
+		setFulfillmentStatus: (orderId: number, fulfillmentStatus: string) => {
+			return axios.post(`http://localhost:3232/api/orders/set-fulfillment-status`, { orderId, fulfillmentStatus }).then((res) => res.data).catch((error) => {
+				if (error.response) {
+					console.log("Error in setFulfillmentStatus: ",error.response.data); // => the response payload 
+				};
+			});	
+		}	
 	}
 };
 

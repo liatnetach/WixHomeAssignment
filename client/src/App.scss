@@ -64,7 +64,7 @@ body {
 			&:hover {
 				box-shadow: 0 2px 6px 1px #a5a5a5;
 			}
-
+			
 			.generalData {
 				padding-top: 6px;
 				display: inline-block;
@@ -82,9 +82,56 @@ body {
 				text-align: end;
 				width: 30%;
 			}
+			.items-In {
+				padding-top: 6px;
+				display: inline-block;
+				width: 45%;
+			}
 
 		}
 	}
+
+///sorting clases
+	.arrow {
+		border: solid black;
+		border-width: 0 3px 3px 0;
+		display: inline-block;
+		padding: 3px;
+	  }
+	  .up {
+		transform: rotate(-135deg);
+		-webkit-transform: rotate(-135deg);
+	  }
+	  .down {
+		transform: rotate(45deg);
+		-webkit-transform: rotate(45deg);
+	  }
+
+	  .myButton {
+		box-shadow: 3px 4px 0px 0px #1564ad;
+		background:linear-gradient(to bottom, #79bbff 5%, #378de5 100%);
+		background-color:#79bbff;
+		border-radius:10px;
+		border:1px solid #337bc4;
+		display:inline-block;
+		cursor:pointer;
+		color:#ffffff;
+		font-family:Arial;
+		font-size:17px;
+		font-weight:bold;
+		padding:4px 16px;
+		text-decoration:none;
+		text-shadow:0px 1px 0px #528ecc;
+	}
+	.myButton:hover {
+		background:linear-gradient(to bottom, #378de5 5%, #79bbff 100%);
+		background-color:#378de5;
+	}
+	.myButton:active {
+		position:relative;
+		top:1px;
+	}
+
 
 	h4 {
 		font-size: 14px;
@@ -119,4 +166,16 @@ body {
 		font-weight: 500;
 		font-size: 12px;
 	}
+	#btn {
+		background: none!important;
+		border: none;
+		padding: 0!important;
+		font-family: arial, sans-serif;
+		text-decoration: underline;
+		display: block;
+		cursor: pointer;
+		color: #3899ec;
+		font-weight: 500;
+		font-size: 12px;
+	}  
 }
